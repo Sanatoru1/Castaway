@@ -13,6 +13,7 @@
 
         .header-line__nav {
             margin-left: 70rem;
+
             .line-nav__list {
                 display: flex;
 
@@ -56,13 +57,17 @@
 @media (max-width: 375px) {
     .header {
         padding-top: 2.5rem;
+
         .header-line {
             align-items: center;
-            .header-line__logo{
-            margin-left: 2rem;  
+
+            .header-line__logo {
+                margin-left: 2rem;
             }
+
             .header-line__nav {
                 opacity: 0;
+
                 .line-nav__list {
                     display: block;
 
@@ -86,17 +91,18 @@
 
 
 @media(max-width: 1024px) {
-    .header{
-                .header-line{
-                    display: flex;
-                    justify-content: space-between;
-                    .header-line__nav {
-                        opacity: 0;
-                        margin-left: inherit;
-                    }
-                    .mob-menu{
-                        margin-left: 80rem;
-                    }
-                }
+    .header {
+        .header-line {
+            display: flex;
+            width: 1024px;
+            justify-content: space-between;
+
+            .header-line__nav {
+                opacity: 0;
+                margin-left: inherit;
             }
+        }
+
+        
+    }
 }
