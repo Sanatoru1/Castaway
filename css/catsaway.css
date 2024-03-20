@@ -27,6 +27,17 @@ body {
   line-height: 2.7rem;
 }
 
+.cc-logo {
+  font-size: 3rem;
+  color: #fff;
+  font-family: "Saira Stencil One", sans-serif;
+}
+.cc-logo:hover {
+  -webkit-transition: 0.8s ease-out;
+  transition: 0.8s ease-out;
+  color: #1f7177;
+}
+
 .mini-subtitle {
   color: #118da8;
   font-size: 1.4rem;
@@ -227,6 +238,17 @@ body {
   color: #118da8;
   font-size: 1.4rem;
   line-height: 2.7rem;
+}
+
+.cc-logo {
+  font-size: 3rem;
+  color: #fff;
+  font-family: "Saira Stencil One", sans-serif;
+}
+.cc-logo:hover {
+  -webkit-transition: 0.8s ease-out;
+  transition: 0.8s ease-out;
+  color: #1f7177;
 }
 
 .mini-subtitle {
@@ -453,6 +475,17 @@ body {
   color: #118da8;
   font-size: 1.4rem;
   line-height: 2.7rem;
+}
+
+.cc-logo {
+  font-size: 3rem;
+  color: #fff;
+  font-family: "Saira Stencil One", sans-serif;
+}
+.cc-logo:hover {
+  -webkit-transition: 0.8s ease-out;
+  transition: 0.8s ease-out;
+  color: #1f7177;
 }
 
 .mini-subtitle {
@@ -722,6 +755,17 @@ body {
   line-height: 2.7rem;
 }
 
+.cc-logo {
+  font-size: 3rem;
+  color: #fff;
+  font-family: "Saira Stencil One", sans-serif;
+}
+.cc-logo:hover {
+  -webkit-transition: 0.8s ease-out;
+  transition: 0.8s ease-out;
+  color: #1f7177;
+}
+
 .mini-subtitle {
   color: #118da8;
   font-size: 1.4rem;
@@ -970,6 +1014,17 @@ body {
   color: #118da8;
   font-size: 1.4rem;
   line-height: 2.7rem;
+}
+
+.cc-logo {
+  font-size: 3rem;
+  color: #fff;
+  font-family: "Saira Stencil One", sans-serif;
+}
+.cc-logo:hover {
+  -webkit-transition: 0.8s ease-out;
+  transition: 0.8s ease-out;
+  color: #1f7177;
 }
 
 .mini-subtitle {
@@ -1248,6 +1303,17 @@ body {
   color: #118da8;
   font-size: 1.4rem;
   line-height: 2.7rem;
+}
+
+.cc-logo {
+  font-size: 3rem;
+  color: #fff;
+  font-family: "Saira Stencil One", sans-serif;
+}
+.cc-logo:hover {
+  -webkit-transition: 0.8s ease-out;
+  transition: 0.8s ease-out;
+  color: #1f7177;
 }
 
 .mini-subtitle {
@@ -1562,6 +1628,17 @@ body {
   line-height: 2.7rem;
 }
 
+.cc-logo {
+  font-size: 3rem;
+  color: #fff;
+  font-family: "Saira Stencil One", sans-serif;
+}
+.cc-logo:hover {
+  -webkit-transition: 0.8s ease-out;
+  transition: 0.8s ease-out;
+  color: #1f7177;
+}
+
 .mini-subtitle {
   color: #118da8;
   font-size: 1.4rem;
@@ -1833,6 +1910,17 @@ body {
   line-height: 2.7rem;
 }
 
+.cc-logo {
+  font-size: 3rem;
+  color: #fff;
+  font-family: "Saira Stencil One", sans-serif;
+}
+.cc-logo:hover {
+  -webkit-transition: 0.8s ease-out;
+  transition: 0.8s ease-out;
+  color: #1f7177;
+}
+
 .mini-subtitle {
   color: #118da8;
   font-size: 1.4rem;
@@ -2093,6 +2181,17 @@ body {
   color: #118da8;
   font-size: 1.4rem;
   line-height: 2.7rem;
+}
+
+.cc-logo {
+  font-size: 3rem;
+  color: #fff;
+  font-family: "Saira Stencil One", sans-serif;
+}
+.cc-logo:hover {
+  -webkit-transition: 0.8s ease-out;
+  transition: 0.8s ease-out;
+  color: #1f7177;
 }
 
 .mini-subtitle {
@@ -2389,6 +2488,17 @@ body {
   line-height: 2.7rem;
 }
 
+.cc-logo {
+  font-size: 3rem;
+  color: #fff;
+  font-family: "Saira Stencil One", sans-serif;
+}
+.cc-logo:hover {
+  -webkit-transition: 0.8s ease-out;
+  transition: 0.8s ease-out;
+  color: #1f7177;
+}
+
 .mini-subtitle {
   color: #118da8;
   font-size: 1.4rem;
@@ -2634,20 +2744,12 @@ legend {
   color: #1f7177;
 }
 
-@media (min-width: 1024px) {
-  .footer .footer_content {
-    padding: inherit;
-  }
-}
 @media (max-width: 375px) {
   .footer .footer_content {
     padding: inherit;
     display: block;
   }
   .footer .footer_content .footer-block__logo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     margin: 2rem 0;
     -webkit-box-align: center;
         -ms-flex-align: center;

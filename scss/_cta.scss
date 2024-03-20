@@ -73,6 +73,13 @@ body {
     }
 }
 
+.cc-logo{
+    @include d-txt-hvr;
+    font-size: 3rem;
+    color: $clr-white;
+    font-family: "Saira Stencil One", sans-serif
+}
+
 .mini-subtitle {
     color: $clr-blue-crayola;
     font-size: $font-size-ms;
@@ -113,7 +120,7 @@ body {
     }
 }
 
-@media(max-width: 375px) {
+@media(max-width: 375px) {  
     .listen {
         .listen-title {
             text-align: center;

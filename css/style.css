@@ -22,6 +22,17 @@ body {
   line-height: 2.7rem;
 }
 
+.cc-logo {
+  font-size: 3rem;
+  color: #fff;
+  font-family: "Saira Stencil One", sans-serif;
+}
+.cc-logo:hover {
+  -webkit-transition: 0.8s ease-out;
+  transition: 0.8s ease-out;
+  color: #1f7177;
+}
+
 .mini-subtitle {
   color: #118da8;
   font-size: 1.4rem;
