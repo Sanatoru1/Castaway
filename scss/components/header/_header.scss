@@ -59,7 +59,6 @@
         .header-line {
             align-items: center;
             .header-line__logo{
-            // display: inline-block;
             margin-left: 2rem;  
             }
             .header-line__nav {
@@ -86,11 +85,18 @@
 }
 
 
-// @media(max-width: 1024px) {
-//     .mob-menu {
-//         .menu-label {
-//             display: block;
-//             // opacity: 1;
-//         }
-//     }
-// }
+@media(max-width: 1024px) {
+    .header{
+                .header-line{
+                    display: flex;
+                    justify-content: space-between;
+                    .header-line__nav {
+                        opacity: 0;
+                        margin-left: inherit;
+                    }
+                    .mob-menu{
+                        margin-left: 80rem;
+                    }
+                }
+            }
+}
