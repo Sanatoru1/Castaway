@@ -1,0 +1,67 @@
+@import "../../cta";
+
+.mob-menu {
+    #burger-btn:checked~.mob-menu_list {
+        display: block;
+    }
+
+    .menu-label {
+        display: none;
+        .menu-span {
+            margin: 0.5rem 0;
+            display: block;
+            // width: 2.2rem;
+            width: 3rem;
+            // height: 0.2rem;
+            height: 0.3rem;
+            background: #ffffff;
+        }
+    }
+
+    .mob-menu_input {
+        opacity: 0;
+    }
+
+    .line-nav__list {
+        z-index: 2;
+        position: absolute;
+        background: #111213;
+        border-radius: 1.2rem;
+        padding: 1rem;
+        max-width: 10rem;
+
+        .line__list-item {
+            a {
+                padding-right: $maring-small;
+                color: $clr-white;
+                font-size: $font-size-l;
+                line-height: 2.7rem;
+                transition: 0.3s ease-in-out;
+
+                &:hover {
+                    transition: $transition-fast;
+                    color: $clr-blue-crayola;
+                }
+            }
+        }
+    }
+
+
+}
+
+@media(max-width: 375px) {
+    .line-nav__list {
+        right: 1rem;
+    }
+}
+
+@media(max-width: 1024px) {
+    .mob-menu {
+        .menu-label {
+            display: block;
+        }
+    }
+    // .line-nav__list{
+    //     right: 1rem;
+    // }
+}

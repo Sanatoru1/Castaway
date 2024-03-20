@@ -1,0 +1,144 @@
+// @import "../cta.scss";
+@import "../../cta";
+@import "../../mixins";
+
+.footer {
+  .listen {
+    margin: 0;
+  }
+
+  padding: $margin-medium $margin-regular;
+
+  // height: 300px;
+  // margin-top: 150px;
+  // display: flex;
+  // justify-content: space-between;
+  .footer_content {
+    display: flex;
+    justify-content: space-between;
+
+    .footer-block__logo {
+      a {
+        i {
+          font-size: 2.8rem;
+          color: $clr-white;
+          margin-right: $margin-xxsmall;
+          margin-top: $margin-xxsmall;
+
+          &:hover {
+            transition: $transition-medium;
+          }
+        }
+      }
+
+      #inst {
+        i {
+          &:hover {
+            color: $clr-red-vivid-purplish;
+          }
+        }
+      }
+
+      #facebook {
+        i {
+          &:hover {
+            color: $clr-blue-drk-crayola;
+          }
+        }
+      }
+
+      #x-twitter {
+        i {
+          &:hover {
+            // color:  lighten($clr-white , 50%);
+            color: rgb(95, 226, 224);
+          }
+        }
+      }
+    }
+
+    .footer-block__nav {
+      display: inline-block;
+
+      .footer-list {
+        .footer-list-item {
+          margin-left: 1.8rem;
+
+          a {
+            @include d-txt-hvr;
+            padding-left: 2.5rem;
+            color: $clr-white;
+            font-size: $font-size-l;
+            line-height: 33.5px;
+          }
+        }
+      }
+    }
+
+    .footer-block__help {
+      display: inline-block;
+
+      .footer-list {
+        .footer-list-item {
+          margin-left: 1.8rem;
+
+          a {
+            @include d-txt-hvr;
+            color: $clr-white;
+            font-size: $font-size-l;
+            line-height: 3.4rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer {
+    .footer_content {
+      padding: inherit;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .footer {
+    .footer_content {
+      // padding: 0 1rem;
+      padding: inherit;
+      display: block;
+
+      .footer-block__logo {
+        display: flex;
+        margin: $margin-xsmall 0;
+        align-items: center;
+
+        a {
+          margin-left: $margin-xxsmall;
+        }
+      }
+
+      .footer-block__nav {
+        display: inline-block;
+        margin-right:$margin-medium;
+        .footer-list {
+          margin-bottom: $maring-small;
+
+          .footer-list-item {
+            margin-left: inherit;
+
+            a {
+              padding-left: inherit;
+            }
+          }
+        }
+      }
+
+      .footer-block__help {
+        display: inline-block;
+      }
+
+    }
+  }
+}

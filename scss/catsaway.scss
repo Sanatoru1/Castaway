@@ -1,0 +1,18 @@
+@media(max-width: 375px) {
+    *{
+        overflow-x: hidden;
+        // outline: 1px solid red;
+    }
+}
+@import "./cta";
+@import "./mixins";
+@import "./templates/btn";
+@import "./components/header/header";
+@import "./components/header/mob-menu";
+@import "./components/main/hero";
+@import "./components/main/episodes";
+@import "./components/main/creator";
+@import "./components/main/reviews";
+@import "./components/main/sec-form";
+@import "./components/footer/footer";
+

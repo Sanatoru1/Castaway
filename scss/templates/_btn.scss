@@ -1,0 +1,20 @@
+@import "../cta";
+.btn {
+    @include btn-hover;
+    // @include click;
+    padding: $margin-xxsmall;
+    border-radius: 0.6rem;
+    background: $clr-blue-crayola;
+    color: $clr-white;
+    font-size: $font-size-l;
+    line-height: 2.7rem;
+}
+
+@media(max-width: 375px) {
+    .btn{
+        display: block;
+        // max-width: 37.5rem;
+        max-width: 35rem;
+        text-align: center;
+        }
+}

@@ -1,0 +1,89 @@
+@import "../../cta";
+
+.sec-form {
+    margin-top: $margin-large;
+
+    .block-form {
+        display: flex;
+        width: $container-width;
+        height: 37rem;
+        border-radius: 3.2rem;
+        background: $clr-black;
+
+        .block-form__text {
+            display: flex;
+            flex-direction: column;
+            padding: 7rem $margin-medium;
+
+            .block-form__title {
+                @include d-txt-hvr;
+                max-width: 40rem;
+                color: $clr-white;
+                font-size: $font-size-xxxxl;
+                line-height: 65.2px;
+                letter-spacing: 0.1rem;
+            }
+        }
+
+        .form {
+            margin-top: $margin-medium;
+            margin-left: 20%;
+            display: flex;
+            flex-direction: column;
+
+            input {
+                font-size: $font-size-l;
+                width: 40rem;
+                height: 6.2rem;
+                margin-bottom: $margin-xsmall;
+                border-radius: 0.6rem;
+                background: $clr-bluish-black;
+                color: $clr-white-gradient;
+                padding-left: $margin-xxsmall;
+            }
+
+            .form-btn {
+                display: flex;
+            }
+        }
+    }
+}
+
+@media(max-width: 375px) {
+    .sec-form{
+        .block-form{
+            width: 37.5rem;
+            display: block;
+            height: 65rem;
+            border-radius: 1rem;
+            .block-form__text {
+                padding: inherit;
+                .block-form__title {
+                    
+                    max-width: 35rem;
+                    height: 12rem;
+                    // font-size: $font-size-xxxxl;
+                    font-size: $font-size-xxxll;
+                    // line-height:  32px;
+                    line-height:  $margin-medium;
+                    letter-spacing: 0.1rem;
+                }
+            }
+
+            .form {
+                // margin-top: inherit;
+                margin-left: inherit;
+                display: block;
+                input {
+                    max-width: 37.5rem;
+                    height: 6.2rem;
+                    margin-bottom: $margin-xsmall;
+                    padding-left: inherit;
+                    border-radius: 0.6rem;
+                    background: $clr-bluish-black;
+                    color: $clr-white-gradient;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,51 @@
+@import "../../cta";
+
+.reviews {
+    flex-wrap: wrap;
+    display: flex;
+    margin-top: $margin-large;
+
+    .block-reviews {
+        @include block-hover;
+        margin: $margin-xxsmall;
+        border-radius: 3.2rem;
+        background: $clr-black;
+        width: 37rem;
+        height: 30rem;
+
+        .block-content {
+            padding: 3.5rem $margin-regular;
+
+            // .stars-line {}
+            .block-revies__title {
+                @include l-txt-hvr;
+                max-width: 25rem;
+                color: $clr-white;
+                font-size: 28px;
+                line-height: 43.2px;
+            }
+
+            .block-revies__username {
+                @include d-txt-hvr;
+                margin-top: $margin-xxsmall;
+                color: $clr-white-gradient;
+                font-size: $font-size-xl;
+                line-height: 28.8px;
+            }
+        }
+    }
+
+}
+
+@media(max-width: 375px) {
+    .reviews{
+    display: block;
+    margin-top: inherit;
+    .block-reviews {
+        margin: $margin-xxsmall;    
+        width: 36rem;
+        height: auto;
+
+    }
+    }
+}

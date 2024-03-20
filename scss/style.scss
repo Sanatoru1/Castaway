@@ -1,0 +1,46 @@
+@import "./cta";
+
+
+// burger-menu
+// надобы что-нибудь придумать с этим
+#burger-btn:checked~.mob-menu_list {
+    transition: $transition-medium;
+    display: block;
+}
+
+.burger-label {
+    font-size: $font-size-s;
+    width: 21.3rem;
+}
+
+
+    .menu-line {
+        display: block;
+        margin: 0.7rem 1rem;
+        width: 3.5rem;
+        height: 0.2rem;
+        background-color: $clr-white;
+    }
+
+
+.mob-menu_list {
+    .mob-menu_item {
+        background-color: rgb(50, 50, 50);
+
+        // width: ;
+        a {
+            color: $clr-white;
+            font-size: 1.5rem;
+        }
+    }
+
+    .mob-link {
+        padding: 1rem 2rem;
+        border: 1px solid black;
+        max-width: 11rem;
+        color: $clr-white;
+        font-size: 1.7rem;
+        line-height: 2.7rem;
+        display: block;
+    }
+}

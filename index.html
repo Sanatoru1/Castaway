@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="kz">
+
+<head>
+    <meta name="author" content="inst: sanatorui">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Castaway</title>
+    <!--css link-->
+    <link rel="stylesheet" href="./css/catsaway.min.css" />
+    <!--FontAwesome link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Google Fonts  font-family:"Dm Sans"; link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-line">
+                <div class="header-line__logo">
+                    <a href="https://www.instagram.com/codecultis">
+                        <img src="./img/icons/catsaway logo.svg" alt="" />
+                    </a>
+                </div>
+
+                <div class="mob-menu">
+                    <input type="checkbox" id="burger-btn" class="mob-menu_input" placeholder="Размер">
+
+                    <label for="burger-btn" class="menu-label">
+                        <span class="menu-span"></span>
+                        <span class="menu-span"></span>
+                        <span class="menu-span"></span>
+                    </label>
+
+                    <ul class="mob-menu_list line-nav__list none">
+
+                        <li class="line__list-item">
+                            <a href="https://www.instagram.com/codecultis">Home</a>
+                        </li>
+
+                        <li class="line__list-item">
+                            <a href="https://www.instagram.com/codecultis">Episodes</a>
+                        </li>
+
+                        <li class="line__list-item">
+                            <a href="https://www.instagram.com/codecultis">About</a>
+                        </li>
+
+                        <li class="line__list-item">
+                            <a href="https://www.instagram.com/codecultis">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <nav class="header-line__nav">
+                    <ul class="line-nav__list">
+
+                        <li class="line__list-item">
+                            <a href="#">Home</a>
+                        </li>
+
+                        <li class="line__list-item">
+                            <a href="#">Episodes</a>
+                        </li>
+
+                        <li class="line__list-item">
+                            <a href="#">About</a>
+                        </li>
+
+                        <li class="line__list-item">
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- <div class="mob-menu">  
+                        <input type="checkbox" id="burger-btn" class="mob-menu_input" placeholder="Размер">
+                
+                        <label for="burger-btn" class="menu-label">
+                            <span class="menu-span"></span>
+                            <span class="menu-span"></span>
+                            <span class="menu-span"></span>
+                        </label>
+                        
+                        <ul class="mob-menu_list line-nav__list none">
+                    
+                            <li class="line__list-item">
+                                <a href="#">Home</a>
+                            </li>
+                    
+                            <li class="line__list-item">
+                                <a href="#">Episodes</a>
+                            </li>
+                    
+                            <li class="line__list-item">
+                                <a href="#">About</a>
+                            </li>
+                    
+                            <li class="line__list-item">
+                                <a href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>  -->
+
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <div class="container">
+            <section class="hero">
+                <div class="hero-img">
+                    <img src="./img/images/man.png" alt="" />
+                </div>
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Take your
+                        podcast to the
+                        <span class="next">next</span>
+                        <span class="level">level</span>
+                    </h1>
+                    <div class="listen">
+                        <h4 class="listen-title">Listen on</h4>
+                        <div class="listen-holder">
+                            <a href="https://open.spotify.com/">
+                                <!-- <img src="./img/icons/spotify logo.svg" alt="" /> -->
+                                <i class="fa-brands fa-spotify"></i>
+                            </a>
+                            <a href="https://pocketcasts.com/">
+                                <!-- <img src="./img/icons/Pocket Casts  logo.svg" alt="" /> -->
+                                <i class="fa-solid fa-microphone"></i>
+                            </a>
+                            <a href="https://soundcloud.com/">
+                                <!-- <img src="./img/icons/Sound Cloud logo.svg" alt="" /> -->
+                                <i class="fa-brands fa-soundcloud"></i>
+                            </a>
+                            <a href="https://www.apple.com/apple-podcasts/">
+                                <!-- <img src="./img/icons/Apple Podcasts logo.svg" alt="" /> -->
+                                <i class="fa-solid fa-music"></i>
+                            </a>
+                            <a href="https://overcast.fm/">
+                                <!-- <img src="./img/icons/Overcast logo.svg" alt="" />-->
+                                <i class="fa-solid fa-tower-cell"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="container">
+            <section class="episodes">
+                <div class="episodes-line">
+                    <h2 class="episodes-title">Latest episodes</h2>
+                    <a href="https://www.instagram.com/codecultis" class="btn">View all episodes</a>
+                </div>
+                <div class="episodes-holder">
+                    <div class="block-episode  first-ep">
+                        <div class="block-img">
+                            <img src="./img/images/sound stantion.png" alt="звуковая станция" />
+                        </div>
+                        <div class="block-text">
+                            <span class="mini-subtitle">Episode 3</span>
+                            <h2 class="text-title">
+                                Should you get
+                                outboard audio gear?
+                            </h2>
+                            <p class="text-more">
+                                Is hardware really worth it when it comes to
+                                podcasting? The answer is...it depends. Here's
+                                our reasons on why you might want to consider
+                                picking something up.
+                            </p>
+                            <div class="button">
+                                <a href="https://www.instagram.com/codecultis" class="btn">View Episode Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="block-episode second-ep">
+                        <div class="block-img">
+                            <img src="./img/images/mircophone.png" alt="микрофон" />
+                        </div>
+                        <div class="block-text">
+                            <span class="mini-subtitle">Episode 2</span>
+                            <h2 class="text-title">
+                                Mic tricks to take
+                                you to the next level
+                            </h2>
+                            <p class="text-more">
+                                Stop rolling with those default settings on your
+                                mic. These small tweaks will take you from
+                                sounding good to great.
+                            </p>
+                            <a href="#" class="btn">View Episode Details</a>
+                        </div>
+                    </div>
+
+                    <div class="block-episode third-ep">
+                        <div class="block-img">
+                            <img src="./img/images/black man and microphone.png" alt="человек записывает подкаст" />
+                        </div>
+                        <div class="block-text">
+                            <span class="mini-subtitle">Episode 1</span>
+                            <h2 class="text-title">
+                                The best microphone under $200
+                            </h2>
+                            <p class="text-more">
+                                With so many microphones on the market, how are
+                                you supposed to know what's the best? Take a
+                                look at our top picks.
+                            </p>
+                            <a href="#" class="btn">View Episode Details</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="container">
+            <section class="creator">
+                <div class="creator-block__text">
+                    <div class="curcle">
+                        <a href="https://www.instagram.com/codecultis" class="curcle-img"></a>
+                    </div>
+                    <span class="mini-subtitle">Meet your host</span>
+                    <h2 class="block-text__title">Jacob Paulaner</h2>
+                    <p class="block-text__more">
+                        Jacob has a background in audio engineering, and has
+                        been podcasting since the early days.
+                    </p>
+                    <p class="block-text__more">
+                        He's here to help you level up your game by sharing
+                        everything he's learned along the way.
+                    </p>
+                </div>
+                <div class="creator-block__image">
+                    <img src="./img/images/creator.png" alt="creator photo" />
+                </div>
+            </section>
+        </div>
+
+        <div class="container">
+            <section class="sec-form">
+                <div class="block-form">
+                    <div class="block-form__text">
+                        <span class="mini-subtitle">Email Newsletter</span>
+                        <h2 class="block-form__title">
+                            Subscribe for updates
+                        </h2>
+                    </div>
+                    <form action="" class="form">
+                        <label>
+                            <input type="text" name="name" placeholder="Name" />
+                        </label>
+                        <label>
+                            <input type="text" name="email" placeholder="Email" />
+                        </label>
+                        <div class="form-btn">
+                            <a href="#" class="form-button btn">Sumbit</a>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+
+        <div class="container">
+            <section class="reviews">
+                <div class="block-reviews">
+                    <div class="block-content">
+                        <div class="stars-line">
+                            <img src="./img/icons/yellow-star.svg" alt="" />
+                            <img src="./img/icons/yellow-star.svg" alt="" />
+                            <img src="./img/icons/yellow-star.svg" alt="" />
+                            <img src="./img/icons/yellow-star.svg" alt="" />
+                            <img src="./img/icons/yellow-star.svg" alt="" />
+                        </div>
+                        <h2 class="block-revies__title">
+                            I can't recommend this podcast enough
+                        </h2>
+                        <p class="block-revies__username">Betty Lacey</p>
+                    </div>
+                </div>
+                <div class="block-reviews">
+                    <div class="block-content">
+                        <div class="stars-line">
+                            <img src="./img/icons/yellow-star.svg" alt="" />
+                            <img src="./img/icons/yellow-star.svg" alt="" />
+                            <img src="./img/icons/yellow-star.svg" alt="" />
+                            <img src="./img/icons/yellow-star.svg" alt="" />
+                            <img src="./img/icons/yellow-star.svg" alt="" />
+                        </div>
+                        <h2 class="block-revies__title">
+                            Jacob is the best in the business
+                        </h2>
+                        <p class="block-revies__username">Adam Driver</p>
+                    </div>
+                </div>
+                <div class="block-reviews">
+                    <div class="block-content">
+                        <div class="stars-line">
+                            <img src="./img/icons/yellow-star.svg" alt="" />
+                            <img src="./img/icons/yellow-star.svg" alt="" />
+                            <img src="./img/icons/yellow-star.svg" alt="" />
+                            <img src="./img/icons/yellow-star.svg" alt="" />
+                            <img src="./img/icons/yellow-star.svg" alt="" />
+                        </div>
+                        <h2 class="block-revies__title">
+                            A wealth of audio knowledge
+                        </h2>
+                        <p class="block-revies__username">Marcus Brown</p>
+                    </div>
+                </div>
+                <div class="block-reviews">
+                    <div class="block-content">
+                        <div class="stars-line">
+                            <img src="./img/icons/yellow-star.svg" alt="" />
+                            <img src="./img/icons/yellow-star.svg" alt="" />
+                            <img src="./img/icons/yellow-star.svg" alt="" />
+                            <img src="./img/icons/yellow-star.svg" alt="" />
+                            <img src="./img/icons/yellow-star.svg" alt="" />
+                        </div>
+                        <h2 class="block-revies__title">
+                            Every episode is a gem!
+                        </h2>
+                        <p class="block-revies__username">Jessica Knowl</p>
+                    </div>
+                </div>
+                <div class="block-reviews">
+                    <div class="block-content">
+                        <div class="stars-line">
+                            <img src="./img/icons/yellow-star.svg" alt="" />
+                            <img src="./img/icons/yellow-star.svg" alt="" />
+                            <img src="./img/icons/yellow-star.svg" alt="" />
+                            <img src="./img/icons/yellow-star.svg" alt="" />
+                            <img src="./img/icons/yellow-star.svg" alt="" />
+                        </div>
+                        <h2 class="block-revies__title">
+                            Whoa, whoa, let me take some notes!
+                        </h2>
+                        <p class="block-revies__username">Scott Adams</p>
+                    </div>
+                </div>
+                <div class="block-reviews">
+                    <div class="block-content">
+                        <div class="stars-line">
+                            <img src="./img/icons/yellow-star.svg" alt="" />
+                            <img src="./img/icons/yellow-star.svg" alt="" />
+                            <img src="./img/icons/yellow-star.svg" alt="" />
+                            <img src="./img/icons/yellow-star.svg" alt="" />
+                            <img src="./img/icons/yellow-star.svg" alt="" />
+                        </div>
+                        <h2 class="block-revies__title">
+                            I've upped my game considerably since I started
+                            listening
+                        </h2>
+                        <p class="block-revies__username">Steven Blast</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+
+            <div class="footer_content">
+
+                <div class="footer-block__logo">
+                    <a href="https://www.instagram.com/codecultis">
+                        <img src="./img/icons/catsaway logo.svg" alt="логотип компании" />
+                    </a>
+                    <div class="social_net-block-img">
+                        <a id="inst" href="https://www.instagram.com/codecultis/">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a id="x-twitter" href="https://www.instagram.com/codecultis/">
+                            <i class="fa-brands fa-twitter"></i>
+                            <!-- <i class="fa-brands fa-x-twitter"></i> -->
+                        </a>
+                        <a id="facebook" href="https://www.instagram.com/codecultis/">
+                            <i class="fa-brands fa-facebook"></i>
+                            <!-- <img src="./img/icons/wb-facebook-logo.svg" alt="" /> -->
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-block__nav">
+                    <nav class="footer-list">
+                        <ul>
+                            <li class="footer-list-item">
+                                <a href="#">Home</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#">About</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#">Episodes</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="footer-block__help">
+                    <nav class="footer-list">
+                        <ul>
+                            <li class="footer-list-item">
+                                <a href="#">Style Guide</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#">Instructions</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#">Changelog</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#">Credit</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#">Powered by Webflow</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#">Licenses</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="listen">
+                    <h4 class="listen-title">Listen on</h4>
+                    <div class="listen-holder">
+                        <a href="https://open.spotify.com/">
+                            <!-- <img src="./img/icons/spotify logo.svg" alt="" /> -->
+                            <i class="fa-brands fa-spotify"></i>
+                        </a>
+                        <a href="https://pocketcasts.com/">
+                            <!-- <img src="./img/icons/Pocket Casts  logo.svg" alt="" /> -->
+                            <i class="fa-solid fa-microphone"></i>
+                        </a>
+                        <a href="https://soundcloud.com/">
+                            <!-- <img src="./img/icons/Sound Cloud logo.svg" alt="" /> -->
+                            <i class="fa-brands fa-soundcloud"></i>
+                        </a>
+                        <a href="https://www.apple.com/apple-podcasts/">
+                            <!-- <img src="./img/icons/Apple Podcasts logo.svg" alt="" /> -->
+                            <i class="fa-solid fa-music"></i>
+                        </a>
+                        <a href="https://overcast.fm/">
+                            <!-- <img src="./img/icons/Overcast logo.svg" alt="" />-->
+                            <i class="fa-solid fa-tower-cell"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>

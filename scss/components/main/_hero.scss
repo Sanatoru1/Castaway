@@ -1,0 +1,82 @@
+@import "../../cta";
+
+.hero {
+    display: flex;
+    margin-top: $margin-regular;
+    .hero-img {
+        width: 75rem;
+        flex-shrink: 0;
+        position: relative;
+    }
+
+    .hero-text {
+        margin-top: 20%;
+
+        .hero-title,.next,.level {
+            @include d-txt-hvr;
+            color: $clr-white;
+            font-size: $font-size-xxl;
+            line-height: 8.8rem;
+            letter-spacing: 3.2px;
+        }
+
+        .next {
+            position: relative;
+            &::before {
+                content: "";
+                background-image: url(../img/icons/blue-underline.svg);
+                background-repeat: no-repeat;
+                width: 14rem;
+                height: 10.5rem;
+                bottom: -1.8rem;
+                background-size: cover;
+                position: absolute;
+                z-index: 2;
+            }
+        }
+
+        .level {
+            font-size: $font-size-xxxxll;
+            font-weight: 900;
+        }
+    }
+}
+
+
+@media(max-width: 1024px) {
+    .hero{
+        .hero-img{
+            width: 50rem;
+        }
+
+        .hero-text{
+            margin-top: 13%;
+            margin-left: 5%;
+            max-width: 44rem;
+            .hero-title{
+                font-size: $font-size-x;
+            }
+        }
+    }
+} 
+
+@media(max-width: 375px) {
+    .hero {
+        display: block;
+        margin-bottom: $margin-large;
+        .hero-img {
+            width: 37.5rem;
+        }
+
+        .hero-text {
+
+            margin: $maring-small 0;
+            .hero-title,.next,.level {
+                text-align: center;
+                max-width: 37.5rem;
+                font-size: $font-size-xxl;
+                letter-spacing: 3.2px;
+            }
+        }
+    }
+}

@@ -1,0 +1,134 @@
+@import "../../cta";
+
+.episodes {
+	margin-top: $margin-large;
+
+	.episodes-line {
+		justify-content: space-between;
+		display: flex;
+		align-items: center;
+
+		.episodes-title {
+			@include d-txt-hvr;
+			color: $clr-white;
+			font-size: $font-size-xxl;
+			line-height: 79.2px;
+			letter-spacing: 2.88px;
+		}
+	}
+	// .episodes-holder{}
+
+	.block-episode {
+		margin-top: 7rem;
+		display: flex;
+		align-items: center;
+		border-radius: 3.2rem;
+		background-color: $clr-black;
+		@include block-hover;
+
+		.block-img {
+			padding: $margin-medium $maring-small;
+		}
+
+		.block-text {
+			margin-left: 6rem;
+			.text-title {
+				max-width: 56rem;
+				color: $clr-white;
+				font-size: $font-size-x;
+				line-height: 70.4px;
+				letter-spacing: 2.56px;
+			}
+			.text-more {
+				width: 89%;
+				margin: 2.3rem 0;
+				color: $clr-white-gradient;
+				font-size: $font-size-l;
+				line-height: 3.3rem;
+			}
+		}
+	}
+}
+
+@media (max-width: 375px) {
+	.episodes {
+		margin-top: $margin-medium;
+		
+		.episodes-line {
+			display: block;
+			.episodes-title {
+				margin: $margin-regular 0;
+				// font-size: $font-size-xxl;
+				font-size: $font-size-xll;
+				line-height: 3rem;
+				letter-spacing: 0.8rem;
+			}
+			// .btn{
+			// display: block;
+			// max-width: 37.5rem;
+			// text-align: center;
+			// }
+		}
+		.block-episode {
+			margin: $maring-small 0;
+			border-radius: $margin-xxsmall;
+			display: block;
+			// height: 65rem;
+			height: 67rem;
+            width: 37.5rem;
+            // width: 35rem;
+			&:nth-child(1) {
+			height: 72rem;
+			}
+			.block-img {
+				padding: $maring-small $margin-xsmall;
+			}
+
+			.block-text {
+				margin-left: inherit;
+				padding: $margin-xxsmall;
+				.text-title {
+					max-width: inherit;
+					font-size: $font-size-xl;
+					line-height: inherit;
+					letter-spacing: inherit;
+				}
+
+				.text-more {
+					// margin-left: inherit;
+					width: inherit;
+					font-size: $font-size-m;
+					line-height: inherit;
+				}
+				a{
+				margin-top: inherit;
+				}
+			}
+		}
+	}
+}
+
+// @media(max-width: 1024px) {
+// 	.episodes{
+
+// 		.episodes-holder{
+// 			max-width: 1024px;
+// 			// overflow: hidden;
+// 			.block-episode{
+// 				// width: 30rem;
+// 				.block-img{
+// 					padding: inherit;
+// 				}
+// 				.block-text {
+// 					margin-left: inherit;
+// 					.text-title{
+// 						font-size: $font-size-xll;
+// 					}
+// 					.text-more{
+// 						font-size: $font-size-m;
+// 					}
+// 				}
+// 			}
+// 		}
+// 	}
+// }

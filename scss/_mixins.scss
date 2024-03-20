@@ -1,0 +1,62 @@
+
+
+@mixin d-txt-hvr {
+    &:hover {
+        transition: $transition-medium;
+        color: $clr-blue;
+    }
+}
+@mixin l-txt-hvr{
+    &:hover {
+            transition: $transition-medium;
+            color: $clr-grey;
+        }
+}
+@mixin block-hover {
+    &:hover {
+        transition: $transition-medium;
+        transition-duration: $transition-duration-medium;
+        background: $clr-blue-crayola;
+        background: darken($clr-blue-crayola , 20%);
+    }
+}
+
+@mixin btn-hover {
+    &:hover {
+        transition: $transition-fast;
+        transition-duration: $transition-duration-medium;
+        background-color: $clr-white;
+        color: $clr-blue-crayola;
+    }
+}
+@mixin click{
+    &:active{
+        padding-bottom: 1.5rem;
+    }
+}
+
+@mixin respond-to($media) {
+    @if $media=='phone' {
+        @media (max-width: 360px) {
+            @content;
+        }
+    }
+
+    @else if $media=='laptop' {
+        @media (max-width: 1024px) {
+            @content;
+        }
+    }
+}
+
+// @mixin block-txt-hover {
+//     &:hover {
+//         transition: $transition-medium;
+//         transition-duration: $transition-duration-medium;
+//         color: $clr-black;
+//     }
+// }
+
+// @mixin img-hover {
+//     &:hover {}
+// }

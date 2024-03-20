@@ -1,0 +1,65 @@
+@import "../../cta";
+
+.creator {
+    margin-top: 30rem;
+    display: flex;
+    .creator-block__text {
+        .curcle {
+            width: 12rem;
+            height: 12rem;
+            border-radius: 40rem;
+            background: $clr-blue-crayola;
+            position: relative;
+            margin-bottom: $margin-xxsmall;
+            &::before {
+                content: "";
+                background-image: url(../img/icons/arrow.png);
+                background-repeat: no-repeat;
+                position: absolute;
+                z-index: 2;
+                width: 18rem;
+                top: 35%;
+                left: $font-size-m;
+                height: $margin-large;
+            }
+        }
+        .block-text__title {
+            @include d-txt-hvr;
+            color: $clr-white;
+            font-size: $font-size-xxxll;
+            line-height: 79.2px; /* 121.846% */
+            letter-spacing: 2.88px;
+        }
+        .block-text__more {
+            @include d-txt-hvr;
+            max-width: 83%;
+            margin: $margin-xsmall 0;
+            color: $clr-white-gradient;
+            font-size: $font-size-xxll;
+            line-height: 3.3rem; /* 150% */
+        }
+    }
+    .creator-block__image {
+        width: 65rem;
+        img {
+            max-width: 65rem;
+            margin-left: 10%;
+            border-radius: 1.2rem;
+        }
+    }
+}
+
+@media(max-width: 375px) {
+    .creator{
+        display: block;
+        .creator-block__text {
+            max-width: 45rem;
+        }
+        .creator-block__image {
+            img {
+                max-width: 35rem;
+                margin-left: inherit;
+            }
+        }
+    }
+}

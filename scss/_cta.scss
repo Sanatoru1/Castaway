@@ -1,0 +1,250 @@
+@import "./mixins";
+
+$clr-white: #fff;
+$clr-white-gradient: rgba(255, 255, 255, 0.7);
+$clr-grey: #6f7171;
+$clr-red-vivid-purplish: #cc2366;
+$clr-blue: #1f7177;
+$clr-blue-crayola: #118da8;
+$clr-blue-drk-crayola: #316FF6;
+$clr-black: #000;
+$clr-bluish-black: #1b1e1e;
+
+$margin-xxsmall: 1rem;
+$margin-xsmall: 2rem;
+$maring-small: 3rem;
+$margin-regular: 4rem;
+$margin-medium: 5rem;
+$margin-large: 10rem;
+$margin-center: 0 auto;
+
+$font-size-xxxxll: 8rem;
+$font-size-xxxxl: 7.5rem;
+$font-size-xxxl: 7rem;
+$font-size-xxxll: 6.5rem;
+$font-size-xxl: 6.4rem;
+$font-size-x: 5rem;
+$font-size-xll: 3.6rem;
+$font-size-xxll: 2.2rem;
+$font-size-xl: 2rem;
+$font-size-l: 1.7rem;
+$font-size-m: 1.6rem;
+$font-size-ml: 1.5rem;
+$font-size-ms: 1.4rem;
+$font-size-s: 1.2rem;
+
+$transition: 0.2s all;
+$transition-fast: 0.3s ease-out;
+$transition-medium: 0.5s ease-out;
+$transition-medium: 0.8s ease-out;
+
+$transition-duration-short: 0.3s;
+$transition-duration-medium: 0.5s;
+$transition-duration-long: 1s;
+
+$transition-ease-out: ease-out;
+$transition-ease-in: ease-in;
+$transition-linear: linear;
+
+$container-width: 1200px;
+
+html {
+    font-size: 10px;
+}
+
+body {
+    // font-family: "Raleway", sans-serif;
+    font-family: "DM Sans", sans-serif;
+    background: $clr-bluish-black;
+}
+
+.container {
+    margin: $margin-center;
+    width: $container-width;
+
+    @include respond-to("phone") {
+        width: 350px;
+    }
+
+    span {
+        color: $clr-blue-crayola;
+        font-size: $font-size-ms;
+        line-height: 2.7rem;
+    }
+}
+
+.mini-subtitle {
+    color: $clr-blue-crayola;
+    font-size: $font-size-ms;
+    line-height: 2.7rem;
+}
+
+.listen {
+    margin-top: $margin-large;
+    display: flex;
+    width: 30rem;
+    height: 30rem;
+    flex-direction: column;
+
+    .listen-title {
+        margin-bottom: $margin-xsmall;
+        color: $clr-white;
+        font-size: $font-size-ml;
+        line-height: 2.4rem;
+    }
+
+    .listen-holder {
+        display: flex;
+        justify-content: space-between;
+        max-width: 25rem;
+
+        a {
+
+            // width: 3.2rem;
+            // height: 3.2rem;
+            // margin-right: 1.7rem;
+            i {
+
+                @include l-txt-hvr;
+                color: $clr-white;
+                font-size: 3rem;
+            }
+        }
+    }
+}
+
+@media(max-width: 375px) {
+    .listen {
+        .listen-title {
+            text-align: center;
+        }
+        margin-left: 4rem;
+        height: 2rem;
+    }
+}
+
+.none {
+    display: none;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+/* Links */
+
+a,
+a:link,
+a:visited {
+    /* color: inherit; */
+    text-decoration: none;
+    /* display: inline-block; */
+}
+
+a:hover {
+    /* color: inherit; */
+    text-decoration: none;
+}
+
+/* Common */
+
+aside,
+nav,
+footer,
+header,
+section,
+main {
+    display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+ul,
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+img,
+svg {
+    max-width: 100%;
+    height: auto;
+}
+
+address {
+    font-style: normal;
+}
+
+/* Form */
+
+input,
+textarea,
+button,
+select {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    display: inline-block;
+    box-shadow: none;
+    background: transparent none;
+    cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+label {
+    cursor: pointer;
+}
+
+legend {
+    display: block;
+}

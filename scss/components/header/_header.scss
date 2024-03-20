@@ -1,0 +1,96 @@
+@import "../../cta";
+
+.header {
+    padding-top: 4.5rem;
+
+    .header-line {
+        justify-content: space-between;
+        display: flex;
+
+        .header-line__logo {
+            max-width: 25rem;
+        }
+
+        .header-line__nav {
+            margin-left: 70rem;
+            .line-nav__list {
+                display: flex;
+
+                .line__list-item {
+                    a {
+                        padding-right: $maring-small;
+                        color: $clr-white;
+                        font-size: $font-size-l;
+                        line-height: 2.7rem;
+                        /* 158.824% */
+                        transition: 0.3s ease-in-out;
+
+                        &:hover {
+                            transition: $transition-fast;
+                            color: $clr-blue-crayola;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// @media(max-width: 1024px) {
+//     .header{
+//         .header-line{
+//             display: flex;
+//             justify-content: space-between;
+//             .header-line__nav {
+//                 opacity: 0;
+//                 margin-left: inherit;
+//             }
+//             .mob-menu{
+//                 margin-left: 80rem;
+//                 // display: block;
+//             }
+//         }
+//     }
+// }
+
+@media (max-width: 375px) {
+    .header {
+        padding-top: 2.5rem;
+        .header-line {
+            align-items: center;
+            .header-line__logo{
+            // display: inline-block;
+            margin-left: 2rem;  
+            }
+            .header-line__nav {
+                opacity: 0;
+                .line-nav__list {
+                    display: block;
+
+                    .line__list-item {
+                        a {
+                            padding-right: inherit;
+                            font-size: $font-size-l;
+                            line-height: inherit;
+                        }
+                    }
+                }
+            }
+
+            .mob-menu {
+                margin-right: 3rem;
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+}
+
+
+// @media(max-width: 1024px) {
+//     .mob-menu {
+//         .menu-label {
+//             display: block;
+//             // opacity: 1;
+//         }
+//     }
+// }
