@@ -90,19 +90,3 @@
 }
 
 
-@media(max-width: 1024px) {
-    .header {
-        .header-line {
-            display: flex;
-            width: 1024px;
-            justify-content: space-between;
-
-            .header-line__nav {
-                opacity: 0;
-                margin-left: inherit;
-            }
-        }
-
-        
-    }
-}
